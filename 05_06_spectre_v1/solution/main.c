@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
   /* Verify that we can't access the secret architecturally */
   fprintf(stderr, "[*] Architectural access: ");
   for(size_t character = 0; character < 15; character++) {
-    fprintf(stderr, "%c", access_array(string, character));
+    fprintf(stderr, "%c", access_array(tmp, character));
   }
   fprintf(stderr, "\n");
   
